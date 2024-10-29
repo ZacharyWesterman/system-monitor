@@ -57,7 +57,6 @@ THRESHOLDS = [
     .95,
     .9,
     .8,
-    .5,
     0, #This bottom threshold will not get notified about.
 ]
 
