@@ -113,7 +113,7 @@ while True:
                 API.call('sendNotification', {
                     'username': user,
                     'title': 'Server Disk Usage Alert',
-                    'body': f'{HOSTNAME.upper()}:\n{"\n".join(alerts)}',
+                    'body': f'{HOSTNAME.upper()}:\n' + '\n'.join(alerts),
                     'category': 'system',
                 })
         except skrunk_api.SessionError as e:
